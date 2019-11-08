@@ -14,13 +14,9 @@ const App = () => {
   useEffect(() => {
     axios.get(`https://swapi.co/api/people?page=${page}`)
       .then(response => {
-        console.log(response);
         setPeople(response.data.results);
       })
       .catch(error => console.error(error))
-    return () => {
-      console.log('cleanup')
-    }
   }, [page]);
   return (
     <div className="App">
@@ -40,6 +36,8 @@ const App = () => {
   );
 }
 export default App;
+
+//Styling of components:
 
 const People = styled.div`
 	display: flex;
