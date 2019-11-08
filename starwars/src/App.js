@@ -3,28 +3,6 @@ import styled from 'styled-components';
 import axios from 'axios';
 import Person from './components/Person';
 
-const People = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 0 50px 50px;
-	.person {
-    width: 100%;
-    max-width: calc(33.33% - 20px);
-		flex-basis: calc(33.33% - 20px);
-		margin-top: 25px;
-		padding: 20px;
-		background-color: rgba(255,255,255, .65);
-		h2 {
-			color: cadetblue;
-			margin-bottom: 10px;
-		}
-		p {
-			line-height: 1.5rem;
-		}
-	}
-`;
-
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -62,3 +40,25 @@ const App = () => {
   );
 }
 export default App;
+
+const People = styled.div`
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 50px 50px;
+	.person {
+    width: 100%;
+    max-width: calc(33.33% - 20px);
+		flex-basis: calc(33.33% - 20px);
+		margin-top: 25px;
+		padding: 20px;
+		background-color: rgba(255,255,255, .65);
+		h2 {
+			color: cadetblue;
+			margin-bottom: 10px;
+		}
+		p {
+			line-height: 1.5rem;
+		}
+	}
+`;
